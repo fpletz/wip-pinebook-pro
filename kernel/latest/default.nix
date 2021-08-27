@@ -53,6 +53,16 @@ linux_latest.override({
         VIDEO_HANTRO_ROCKCHIP y
       '';
     }
+    {
+      name = "minimal-config";
+      patch = null;
+      extraConfig = ''
+        MEDIA_TUNER n
+        DVB_USB n
+        FUSION n
+        CAN n
+      '';
+    }
 
     # Misc. community patches
     # None are *required* for basic function.
