@@ -117,17 +117,17 @@ linux_latest.override({
       "1008-rk3399-rp64-pcie-Reimplement-rockchip-PCIe-bus-scan-delay.patch"     # RockPro64
       "sha256-6c64k47hnuKL+A+QjDBPSgT1dwTUlIjbhHGhwGZk7xI=")
 
-    (manjaroArmPatch
-      "1009-drm-meson-encoder-add-YUV422-output-support.patch"                   # Meson G12B
-      "sha256-Nyw+cjiBqp0c9eMFB0mmNCVa+uDYHsPs/j+CwLIdEDk=")
+    #(manjaroArmPatch
+    #  "1009-drm-meson-encoder-add-YUV422-output-support.patch"                   # Meson G12B
+    #  "sha256-Nyw+cjiBqp0c9eMFB0mmNCVa+uDYHsPs/j+CwLIdEDk=")
 
     (manjaroArmPatch
       "1011-arm64-dts-amlogic-add-meson-g12b-ugoos-am6-plus.patch"               # Meson Ugoos
       "sha256-4YoT5pK70aG7EZBghn47JbFqq0qCl1iVUgWMQV223Ec=")
 
-    (manjaroArmPatch
-      "1012-drm-panfrost-scheduler-improvements.patch"                           # Panfrost;  Will be submitted upstream by the author
-      "sha256-wE7xNwBcQ6OIqe97IAbpas73m+3qN03V/+Cp0MMuuEM=")
+    #(manjaroArmPatch
+    #  "1012-drm-panfrost-scheduler-improvements.patch"                           # Panfrost;  Will be submitted upstream by the author
+    #  "sha256-wE7xNwBcQ6OIqe97IAbpas73m+3qN03V/+Cp0MMuuEM=")
 
     (manjaroArmPatch
       "1013-arm64-dts-rockchip-Add-PCIe-bus-scan-delay-to-RockPr.patch"          # RockPro64
@@ -137,13 +137,13 @@ linux_latest.override({
       "1014-drm-rockchip-support-gamma-control-on-RK3399.patch"                  # RK3399 VOP;  From list: https://patchwork.kernel.org/project/linux-arm-kernel/cover/20211019215843.42718-1-sigmaris@gmail.com/
       "sha256-VFZE5ZQQ6bf5n2Cf/DP1Ulcd6BLQ3rXiA1nAmJHpbzg=")
 
-    (manjaroArmPatch
-        "2001-Bluetooth-Add-new-quirk-for-broken-local-ext-features.patch"         # Bluetooth;  From list: https://patchwork.kernel.org/project/bluetooth/patch/20200705195110.405139-2-anarsoul@gmail.com/
-      "sha256-CExhJuUWivegxPdnzKINEsKrMFx/m/1kOZFmlZ2SEOc=")
+#    (manjaroArmPatch
+#        "2001-Bluetooth-Add-new-quirk-for-broken-local-ext-features.patch"         # Bluetooth;  From list: https://patchwork.kernel.org/project/bluetooth/patch/20200705195110.405139-2-anarsoul@gmail.com/
+#      "sha256-CExhJuUWivegxPdnzKINEsKrMFx/m/1kOZFmlZ2SEOc=")
 
-    (manjaroArmPatch
-        "2002-Bluetooth-btrtl-add-support-for-the-RTL8723CS.patch"                 # Bluetooth;  From list: https://patchwork.kernel.org/project/bluetooth/patch/20200705195110.405139-3-anarsoul@gmail.com/
-      "sha256-dDdvOphTcP/Aog93HyH+L9m55laTgtjndPSE4/rnzUA=")
+#    (manjaroArmPatch
+#        "2002-Bluetooth-btrtl-add-support-for-the-RTL8723CS.patch"                 # Bluetooth;  From list: https://patchwork.kernel.org/project/bluetooth/patch/20200705195110.405139-3-anarsoul@gmail.com/
+#      "sha256-dDdvOphTcP/Aog93HyH+L9m55laTgtjndPSE4/rnzUA=")
 
     (manjaroArmPatch
         "2003-arm64-allwinner-a64-enable-Bluetooth-On-Pinebook.patch"              # Bluetooth;  From list: https://patchwork.kernel.org/project/bluetooth/patch/20200705195110.405139-4-anarsoul@gmail.com/
@@ -153,9 +153,9 @@ linux_latest.override({
         "2004-arm64-dts-allwinner-enable-bluetooth-pinetab-pinepho.patch"          # Bluetooth;  The PinePhone part is in linux-next
       "sha256-o43P3WzXyHK1PF+Kdter4asuyGAEKO6wf5ixcco2kCQ=")
 
-    (manjaroArmPatch
-        "2005-staging-add-rtl8723cs-driver.patch"                                  # Realtek WiFi;  Not upstreamable
-      "sha256-6ywm3dQQ5JYl60CLKarxlSUukwi4QzqctCj3tVgzFbo=")
+#    (manjaroArmPatch
+#        "2005-staging-add-rtl8723cs-driver.patch"                                  # Realtek WiFi;  Not upstreamable
+#      "sha256-6ywm3dQQ5JYl60CLKarxlSUukwi4QzqctCj3tVgzFbo=")
 
     (manjaroArmPatch
         "2008-brcmfmac-USB-probing-provides-no-board-type.patch"                   # Bluetooth;  Will be submitted upstream by the author
