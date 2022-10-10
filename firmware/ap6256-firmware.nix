@@ -1,7 +1,7 @@
 { lib
 , fetchFromGitLab
 , fetchurl
-, runCommandNoCC
+, runCommand
 }:
 
 let
@@ -10,7 +10,7 @@ let
     inherit sha256;
   };
 in
-runCommandNoCC "pinebookpro-ap6256-firmware" {
+runCommand "pinebookpro-ap6256-firmware" {
   meta = with lib; {
     license = licenses.unfreeRedistributable;
   };
